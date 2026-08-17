@@ -1,15 +1,15 @@
 "use strict";
 
-let a,b,c,d;
+let a, b, c, d;
 a = 10;
 b = "dev kumar";
 c = 45.45;
-d = 'a';
+d = "a";
 
-console.log(a)
-console.log(b)
-console.log(c)
-console.log(d)
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
 
 let x;
 console.log(x); // Outputs: undefined (No error!)
@@ -18,4 +18,6 @@ console.log(x); // Outputs: undefined (No error!)
 // console.log(67+43)
 
 console.log(typeof undefined); // Outputs: "undefined"
-console.log(typeof null);      // Outputs: "object"  (Wait, WHAT?!)
+console.log(typeof null); // Outputs: "object"  (Wait, WHAT?!)
+
+alert("Dev kumar")
