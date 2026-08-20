@@ -12,8 +12,8 @@ console.log(c);
 console.log(d);
 
 let x;
-console.log(x); // Outputs: undefined (No error!)
-// let x;          // wont work reference error
+console.log(x); // Outputs: undefined (No error!) in browser
+// let x;          // wont work reference error in nodjs environment
 // console.log("Hello dev")
 // console.log(67+43)
 

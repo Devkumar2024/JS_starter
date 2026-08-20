@@ -1,5 +1,6 @@
 let name = "Alex";
 console.log(typeof name); // Outputs: "string"
+// Let is used when we have to change value in future.
 
 let age = 25;
 console.log(typeof age); // Outputs: "number"
