@@ -11,19 +11,29 @@ x();
 window.x(); // runs in browser only
 
 // Object method
-let calculator = {
-  a: 10,
-  introduce() {
-    console.log(this);
-    console.log(this.a);
+let stu1 = {
+  name: "Dev kumar",
+  introduce(){
+    console.log(this.name);
   },
+
+
+
+// In case of arrow function it does not provide its own this binding, they retain value of thier own Lexical Context
+
 
 };
 
-// object method() vs object method
-//calls the function
-calculator.introduce();
+let stu2 = {
+  name: "Depikia",
+};
+// reusing stu1 method
+// .call will take value of this keyword inside it
 
-// call, apply and bind methods
+// deepika is using stu1 function. OVERRIDE VALUE
+stu1.introduce.call(stu2);
+
+// this keyword behave inside arrow function
+
 
 
