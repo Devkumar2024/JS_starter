@@ -13,6 +13,15 @@ let gen_info = {
     No_of_EOMs: 45,
   },
 };
+
+// usage in function
+// { name, age } = {} , to avoid crash in cases of when passes without arguements. undefined undefined as output
+function displayUser({ name, age } = {}) {
+  console.log(name);
+  console.log(age);
+}
+displayUser(gen_info);
+
 // assigning cutom names in desctruring and usage of def values
 let {
   name: Username,
@@ -23,7 +32,7 @@ let {
   company: workplace,
 } = gen_info;
 
-console.log([Username, stats, gen_info.name, home]);
+console.log([Username, stats, gen_info.name, home] + "\n\n");
 
 // nested value destructuring
 let {
@@ -34,4 +43,33 @@ let {
 
 console.log(job_stat);
 console.log(Exp);
-console.log(Accolades);
+console.log(Accolades + "\n\n");
+
+let user = {
+  name: "Dev",
+
+  skills: ["JavaScript", "HTML", "CSS"],
+
+  address: {
+    city: "Ludhiana",
+  },
+};
+
+console.log(user.skills[1] + "\n\n");
+
+// Array of objects
+let users = [
+  {
+    name: "Dev",
+    age: 23,
+  },
+  {
+    name: "Aman",
+    age: 24,
+  },
+  {
+    name: "Rahul",
+    age: 22,
+  },
+];
+console.log(users[2].age);
