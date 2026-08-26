@@ -6,7 +6,7 @@ const n = 3;
 // different way to define for loop in JS
 // for(const num of n){
 //     console.log(wo_parameter())
-// }  only qoerks in case of iterable stuff like array, stringb , maps , set
+// }  only works in case of iterable stuff like array, stringb , maps , set
 
 for(let i = 1; i<=n; i++){
     console.log(wo_parameter());

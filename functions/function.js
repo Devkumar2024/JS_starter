@@ -1,4 +1,4 @@
-// function keyword and function name is used
+// function keyword and function name is used, sum pf items upto n
 function sumton(n) {
   if (n < 0) {
     console.log("Invalid input");
@@ -8,7 +8,7 @@ function sumton(n) {
   return (n * (n + 1)) / 2;
 }
 
-const ip_Num = -10;
+const ip_Num = 10;
 const result = sumton(ip_Num);
 
 if(result !== -1){

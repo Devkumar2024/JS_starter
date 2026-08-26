@@ -1,4 +1,4 @@
-// arrow function and anonymus function
+// Fat arrow function and anonymus function
 const n = 100;
 
 

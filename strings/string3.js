@@ -14,7 +14,17 @@ for (let ch of str) {
 
 console.log(new_str);
 
-// for in takes extra computations
+// for in takes extra computations, trvesrses full prototype chain, all propety names are converted to string
+// index value is also of string type here
 for(let index in str){
-    console.log("Type : ", typeof index, typeof str[index]);
+    console.log("Type : ", index, typeof index + " , " + str[index],  typeof str[index]);
 }
+
+console.log();
+
+// general for loop index is number
+ for (let i = 0; i < str.length; i++) {
+  //  console.log(`Index ${i}: ${str[i]}`);
+   console.log("Type : ", i, typeof i + " , " + str[i],  typeof str[i]);
+ }
+

@@ -6,9 +6,9 @@ let ghi = " B.tech CSE";
 
 console.log(abc.toUpperCase());
 console.log(abc.toLowerCase());
-// remove weekly space of only start and end
+// remove space of only start and end
 console.log(abc.trim());
-console.log(abc.concat(def));
+console.log(abc.concat(def)); 
 console.log(abc.indexOf('a'));  // 7
 console.log(abc.charAt(5));
 console.log(def.replaceAll("IT", "CSE")); // " B.tech CSE"
