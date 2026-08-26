@@ -21,7 +21,9 @@ let stu1 = {
 
 // In case of arrow function it does not provide its own this binding, they retain value of thier own Lexical Context
 
-
+  x:() => {
+    console.log(this);
+  },
 };
 
 let stu2 = {
@@ -32,8 +34,9 @@ let stu2 = {
 
 // deepika is using stu1 function. OVERRIDE VALUE
 stu1.introduce.call(stu2);
+stu1.x(); // prints window, parent lexical context. 
 
-// this keyword behave inside arrow function
+
 
 
 
