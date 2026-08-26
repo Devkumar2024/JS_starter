@@ -1,4 +1,4 @@
-// Array destructing
+// Array destructuring
 let details = ["Dev K", 23, "Punjab", "India"];
 let [name, age, state, country] = details;
 console.log(country);
