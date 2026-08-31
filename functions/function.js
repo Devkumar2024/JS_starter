@@ -1,16 +1,20 @@
 // function keyword and function name is used, sum pf items upto n
-function sumton(n) {
-  if (n < 0) {
-    console.log("Invalid input");
+// callback function :: function passed as an arguement to another function, like jhon doe in console log
+function Jhon_doe(num) {
+  let sum = 0;
+  if (num < 0) {
+    console.log(`Inavlid Input`);
     return -1;
+  } else {
+    for (let i = 1; i <= num; i++) {
+      sum += i;
+    }
+    return sum;
   }
-
-  return (n * (n + 1)) / 2;
 }
 
-const ip_Num = 10;
-const result = sumton(ip_Num);
+const num = 10;
 
-if(result !== -1){
-    console.log("The sum upto ", ip_Num , " is : ", result);
+if (Jhon_doe(num) !== -1) {
+  console.log(`Sum of first ${num} natural numbers is ${Jhon_doe(num)}`);
 }

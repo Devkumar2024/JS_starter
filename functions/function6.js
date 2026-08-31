@@ -6,3 +6,7 @@ console.log("My name in dev kumar");
 (function college() {
   console.log("GNDEC Ludhiana");
 })();
+
+((age = 23)=>{
+   console.log(`My age is ${age}`);
+})();
