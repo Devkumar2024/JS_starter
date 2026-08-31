@@ -21,16 +21,13 @@ let obj2 = {
   roll_no: 2021003, //property
   greet: function () {
     // method
-    // console.log("Hi this is " + this.n);
+    console.log("Hi this is " + this.n);
     console.log(this);
     // this represents object
   },
-
 };
 
 // problem is bad syntax when we have to create multiple functions in object literal method
-
-
 console.log(obj);
 console.log(obj2);
-obj.G();
+obj.greet();

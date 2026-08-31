@@ -1,8 +1,6 @@
 // factory functions :: return object
-
 function milk_factory(cow_name, origin, Grass_fed, Liter_yield) {
   return {
-    // def parameters
     name: cow_name,
     origin: origin,
     food: Grass_fed,

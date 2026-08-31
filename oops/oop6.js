@@ -1,5 +1,4 @@
 // prototype usage
-
 function BankACCOUNT(holder_NM, balance = 0) {
   this.holder_NM = holder_NM;
   this.balance = balance;

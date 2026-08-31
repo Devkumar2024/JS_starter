@@ -13,15 +13,13 @@ window.x(); // runs in browser only
 // Object method
 let stu1 = {
   name: "Dev kumar",
-  introduce(){
+  introduce() {
     console.log(this.name);
   },
 
+  // In case of arrow function it does not provide its own this binding, they retain value of thier own Lexical Context
 
-
-// In case of arrow function it does not provide its own this binding, they retain value of thier own Lexical Context
-
-  x:() => {
+  x: () => {
     console.log(this);
   },
 };
@@ -34,9 +32,4 @@ let stu2 = {
 
 // deepika is using stu1 function. OVERRIDE VALUE
 stu1.introduce.call(stu2);
-stu1.x(); // prints window, parent lexical context. 
-
-
-
-
-
+stu1.x(); // prints window, parent lexical context.

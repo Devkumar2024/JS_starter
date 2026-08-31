@@ -35,6 +35,8 @@ let laptop = {
 
 // name, processor, ram, storage, ...etc are properties.
 console.log(laptop.Processor);
+// property.fun_name() :: () is req to call the function
 console.log(laptop.Device_ON());
 console.log(laptop.Return_model());
 console.log(laptop.New_card());
+console.log(laptop.Graphics_card);

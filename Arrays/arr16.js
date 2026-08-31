@@ -1,6 +1,11 @@
-// (spread : open & unpack) and (rest :: collect and put in var) operator
+// (spread : open & unpack) and (rest : collect and put in var) operator
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(...arr);
+// ...arr spreads the elements of arr into a new array literal. This creates a brand new array that contains the same values
+let bc =[ ...arr];
+// cd = arr does not create a new array. It simply makes cd point to the same array object in memory that arr points to.
+let cd = arr;
+console.log(typeof bc);
+console.log(typeof cd);
 
 // combining with some modification using spread
 let a = [10, 20, 30];

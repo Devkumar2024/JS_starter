@@ -1,5 +1,4 @@
 // Abstraction
-
 class Car {
   #fuel = 100;
   // #is used for encapsulation

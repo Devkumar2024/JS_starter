@@ -20,3 +20,4 @@ console.log(gen_info.profession);
 basic_info.profile.Exp = 15;
 console.log(gen_info.profile.Exp); //15, KHOOKHLA
 
+// nested objects are shared, top level ppts are safe and copied uniquely

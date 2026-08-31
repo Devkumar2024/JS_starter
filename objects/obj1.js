@@ -24,5 +24,6 @@ console.log(laptop[key]);
 laptop.year = 2023;
 console.log(laptop);
 
+// delete a property
 delete laptop.year;
 console.log(laptop);

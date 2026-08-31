@@ -1,10 +1,8 @@
 // inheritance
-
 class Car {
   constructor(brand) {
     this.brand = brand;
   }
-
   drive() {
     console.log(`${this.brand} car is running !!!`);
   }
@@ -16,7 +14,6 @@ class ElectricCar extends Car {
     super(brand);
     this.battery = battery;
   }
-
   drive() {
     console.log(
       `${this.brand} car is running silently with ${this.battery}!!!`,

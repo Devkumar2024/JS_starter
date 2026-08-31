@@ -1,9 +1,8 @@
-// prototype
+// constructor function 
 function Student(name, age) {
   this.name = name;
   this.age = age;
 }
-
 // this is required to access current object variables and methods
 Student.prototype.Introduce = function(){
     console.log(`My name is ${this.name} and age is ${this.age}`);

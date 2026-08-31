@@ -7,8 +7,7 @@ function user(name, work, dept, salary) {
   // non static defn.
   this.pay = salary;
 }
-
-// we need new keyword, warna same new banta rahega
+// we need new keyword, warna same object banta rahega
 
 // let e1 = user("Dev", "Jr. SE", "Full stack", 5000)
 // let e2 = user("vilan", "Jr. SE", "Full stack", 5600)

@@ -1,10 +1,15 @@
-
-function greet(){
-    console.log("Hello girl.");
+// 1. Hoisting phase:
+function greet() {
+  // Function Declaration is fully hoisted (stored in memory)
+  console.log("Hello girl.");
 }
 
-sayHello(); // ❌ ERROR: sayHello is not a function (ya Cannot access before initialization)
+var sayHello; // 'var' declaration is hoisted, but initialized as 'undefined'
 
-var sayHello = function() {
-    console.log("Hi!");
+// 2. Execution phase:
+sayHello(); // ❌ ERROR! sayHello is currently 'undefined', not a function.
+
+sayHello = function () {
+  // This assignment NEVER runs because the error stops execution
+  console.log("Hi!");
 };

@@ -1,5 +1,4 @@
 //  Object Destructuring
-
 let gen_info = {
   name: "jhon doe",
   age: 36,
@@ -15,14 +14,14 @@ let gen_info = {
 };
 
 // usage in function
-// { name, age } = {} , to avoid crash in cases of when passes without arguements. undefined undefined as output
-function displayUser({ name, age } = {}) {
-  console.log(name);
-  console.log(age);
+// { name, age } = {} , to avoid crash in cases of when passes without arguements. undefined is shown as output
+function displayUser({ name: n, age: a } = gen_info) {
+  console.log(n); // "jhon doe"
+  console.log(a); // 36
 }
-displayUser(gen_info);
+displayUser(gen_info); 
 
-// assigning cutom names in desctruring and usage of def values
+// assigning custom names in desctruring and usage of def values
 let {
   name: Username,
   age,
@@ -32,7 +31,7 @@ let {
   company: workplace,
 } = gen_info;
 
-console.log([Username, stats, gen_info.name, home] + "\n\n");
+console.log([Username, stats, gen_info.name, home] );
 
 // nested value destructuring
 let {
@@ -43,19 +42,17 @@ let {
 
 console.log(job_stat);
 console.log(Exp);
-console.log(Accolades + "\n\n");
+console.log(Accolades);
 
 let user = {
   name: "Dev",
-
   skills: ["JavaScript", "HTML", "CSS"],
-
   address: {
     city: "Ludhiana",
   },
 };
 
-console.log(user.skills[1] + "\n\n");
+console.log("Skills : " + user.skills);
 
 // Array of objects
 let users = [

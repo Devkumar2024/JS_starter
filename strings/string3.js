@@ -2,7 +2,7 @@
 const str = "Dev kumar";
 
 console.log("Length of the string str is = ", str.length);
-// console.log("Last character of string = ", str[str.length-1])
+console.log("Last character of string = ", str[str.length-1])
 // Looping through indexes
 // for (let i = 0; i < str.length; i++) {
 //   console.log(`Index ${i}: ${str[i]}`);

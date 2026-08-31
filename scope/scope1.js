@@ -1,12 +1,9 @@
 // Global scope
-
 let n = "dev";
 function greet() {
   console.log(n);
   // seraches n in block --> not found, find in global.
 }
-
-console.log(n);
 greet();
 
 for (let i = 0; i <= 3; i++) {
@@ -25,9 +22,8 @@ for (var j = 0; j <= 3; j++) {
 
 // best example
 function block() {
-  
   {
-    // var accessible 
+    // var accessible
     var v = 78;
     console.log(v);
     {
@@ -37,7 +33,6 @@ function block() {
   console.log(v);
 }
 function bla() {
-  
   {
     // let not accessible outside block
     let v = 78;
@@ -48,5 +43,5 @@ function bla() {
   }
   console.log(v);
 }
-block();
-bla();
+// block();
+// bla();

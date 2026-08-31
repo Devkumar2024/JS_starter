@@ -1,5 +1,4 @@
 // id_generator
-
 class EID_generator {
   constructor(name, age, dob, dept, role, salary) {
     this.name = name;
@@ -9,6 +8,7 @@ class EID_generator {
     this.role = role;
     this.salary = salary;
   }
+  // prototype function
   generate() {
     console.log(`
 Name = ${this.name}

@@ -10,7 +10,7 @@ let arr = [10, 100, 1011, 12, 34, 432];
 
 let sum = arr.reduce((Accumulator, current) => {
   return Accumulator + current;
-}, 0 /* Initial value when arr starts */);
+}, 0 ); /* Initial value when arr starts */
 
 console.log("Sum of elements : " + sum);
 // console.log(typeof sum);
@@ -18,6 +18,6 @@ console.log("Sum of elements : " + sum);
 // Max element
 let max = arr.reduce((Accumulator, current) => {
   return Accumulator > current ? Accumulator : current;
-}, arr[0] /* initial value as we have to comapre elements */);
+}, arr[0]); /* initial value as we have to comapre elements */
 
 console.log(max);

@@ -26,7 +26,7 @@ students.map(([name, marks]) => {
   console.log(name, marks);
 });
 
-// nested decinstruction
+// nested destruction
 let data = ["Dev K", 23, ["Punjab", "India"]];
 let[Name, Age, Loc] = data;
 console.log(Loc);
