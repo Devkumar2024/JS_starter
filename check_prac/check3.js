@@ -45,12 +45,12 @@ console.log(b);
 
 const users = [
     { name: "Dev", city: "Ludhiana" },
-    { name: "aman", city: "Ludhiana" },
-    { name: "arvind", city: "Delhi" },
-    { name: "prabhjot", city: "Ludhiana" },
-    { name: "sagar", city: "Delhi" },
+    { name: "Jhon", city: "Ludhiana" },
+    { name: "nitin", city: "Delhi" },
+    { name: "ayushi", city: "Ludhiana" },
+    { name: "sam", city: "Delhi" },
     { name: "vivek", city: "Asr" },
-    { name: "ankur", city: "Asr" }
+    { name: "ankush", city: "Asr" }
 ];
 
 const grouped = users.reduce((acc, curr) => {
