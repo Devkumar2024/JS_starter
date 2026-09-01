@@ -29,3 +29,48 @@ introduce2.apply(person, ["Ludhiana", 141007]);   // Output: Hi, I'm Rahul.
 // Alternative: using .bind() – creates a new function with bound context
 const boundIntro = introduce.bind(person);
 boundIntro();
+
+// Given a user object containing name, email, age, and city, extract only name and email using destructuring.
+
+const user = {
+    name: "Dev kumar",
+    email: "xyz@gmail.com",
+    city: "ludhiana",
+}
+
+let { name:n, email:e } = user;
+
+console.log(n)
+console.log(typeof n) 
+console.log(e)
+console.log(typeof e)
+
+// Given an object containing firstName and lastName, destructure them and create a fullName.
+
+const Naam = {
+    firstName: "Dev",
+    lastName: "Kumar"
+}
+
+let { firstName, lastName } = Naam
+const fullName = firstName + " " + lastName;
+console.log(fullName);
+
+// Given a nested object containing user → address → city, extract the city using nested destructuring.
+
+const user1 = {
+    name: "Dev kumar",
+    address: {
+        // country and state are extra
+        country: "India",
+        state: "Punjab",
+        city: "Ludhiana"
+    }
+}
+
+let { name, address: {country, state, city}} = user1;
+
+console.log(name);
+console.log(state);
+console.log(country);
+console.log(city);

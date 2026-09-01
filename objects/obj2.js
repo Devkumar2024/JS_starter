@@ -40,3 +40,30 @@ console.log(laptop.Device_ON());
 console.log(laptop.Return_model());
 console.log(laptop.New_card());
 console.log(laptop.Graphics_card);
+
+
+// Create a shoppingCart object containing products and a method getTotal() that calculates the total price using this
+
+const shoppingCart = {
+    products: {
+        apple: 10,
+        oranges: 15,
+        televison: 1,
+        laptop: 2
+    },
+    price: {
+        apple: 50,
+        oranges: 20,
+        televison: 10000,
+        laptop: 55000
+    }, 
+    total: function () {
+        let sum = 0;
+        // it iterates on property, will works even in shuffeling also
+        for (let i in this.products) {
+            sum += (this.products[i] * this.price[i]);
+        }
+        return sum;
+    }
+}
+console.log(shoppingCart.total());

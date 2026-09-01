@@ -27,3 +27,20 @@ console.log(laptop);
 // delete a property
 delete laptop.year;
 console.log(laptop);
+
+// Create a student object with an array of marks and a method getAverage() that calculates the average using this.
+
+const student = {
+    n : 'jhon',
+    marks: [70, 100, 69, 50, 69, 80, 70, 90, 85, 54],
+    //normal function has dynamic this value
+    getAverage: function () {
+        // return this.marks.reduce((a, b) => a + b, 0) / this.marks.length;
+        let s = this.marks.reduce((sum_acc, current) => {
+            return (sum_acc + current);
+        }, 0)
+      return (s/this.marks.length)
+    }
+}
+
+console.log(student.getAverage());

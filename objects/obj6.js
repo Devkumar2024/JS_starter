@@ -21,3 +21,56 @@ let basic_info = gen_info;
 
 basic_info.profession = "PHP laravel developer";
 console.log(gen_info.profession);
+
+/*
+{
+  name: "Dev",
+  address: {
+    city: "Ludhiana",
+    state: "Punjab"
+  }
+}
+
+transform it into a flat object containing name, city, and state.
+*/
+let obj = {
+    name: "Dev",
+    address: {
+        city: "Ludhiana",
+        state: "Punjab"
+    }
+}
+
+let { name, address: { city, state } } = obj
+let new_obj = { name, city, state }
+console.log(new_obj)
+
+/*
+Given:
+{
+  name: "Dev",
+  age: 23,
+  city: "Ludhiana"
+}
+
+transform it into:
+
+{
+  personal: {
+    name: "Dev",
+    age: 23
+  },
+  location: {
+    city: "Ludhiana"
+  }
+}*/
+
+// let obj = {
+//     name: "Dev",
+//     age: 23,
+//     city: "Ludhiana"
+// }
+
+// let { name, age, city } = obj;
+// const new_obj = { personal: { name, age }, location: { city } };
+// console.log(new_obj)

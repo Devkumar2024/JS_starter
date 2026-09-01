@@ -70,3 +70,29 @@ let users = [
   },
 ];
 console.log(users[2].age);
+
+
+/*
+Given:
+{
+  firstName: "Dev",
+  lastName: "Kumar",
+  age: 23
+}
+
+transform it into:
+
+{
+  fullName: "Dev Kumar",
+  age: 23
+}
+*/
+let obj = {
+    firstName: "Dev",
+    lastName: "Kumar",
+    age: 23
+}
+
+let { firstName, lastName, ...rest } = obj
+let new_obj = { fullName: firstName +" " + lastName, ...rest };
+console.log(new_obj);
