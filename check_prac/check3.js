@@ -20,7 +20,8 @@ introducePriya("bandra", 69072); // introduce.bind(user2) → Locks this to { na
 ]
 
 return sum of all prices amd transfrom with names ppt deleted
-}*/
+}
+*/
 
 let arr = [
     { id: 1, name: "A", price: 100 },
