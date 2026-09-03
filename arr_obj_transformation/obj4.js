@@ -15,10 +15,10 @@ Transform every student into:
 */
 
 let arr = students.map((e) => {
-  let s = e.marks.reduce((acc, curr) => {
+  let totalM = e.marks.reduce((acc, curr) => {
     return acc + curr;
   }, 0);
-  return { id: e.id, name: e.name, totalMarks: s };
+  return { id: e.id, name: e.name, totalMarks: totalM };
 });
 
 console.log(arr);
@@ -32,7 +32,7 @@ let arr1 = students.map((e) => {
 });
 
 console.log(arr1);
-
+console.log();
 /*
 Add a passed property to every student based on whether their average is at least 55.
 */
@@ -43,24 +43,27 @@ let arr2 = students.map((e) => {
       return acc + curr;
     }, 0) / e.marks.length;
 
-  return { ...e, passed: s>=55 }
-})
+  return { ...e, passed: s >= 55 };
+});
 console.log(arr2);
+console.log();
 
 /*
 Transform the array into an object where the student's id is the key and their average marks are the values.
 */
 
-let arr3 = students.reduce((acc, curr, index) => {
-  let s = curr.marks.reduce((acc, curr) => { return acc + curr }, 0) / curr.marks.length;
+let arr3 = students.reduce((acc, curr) => {
+  let s =
+    curr.marks.reduce((acc, curr) => {
+      return acc + curr;
+    }, 0) / curr.marks.length;
 
   acc[curr.id] = s;
   return acc;
-}, {})
+}, {});
 
-console.log(arr3)
+console.log(arr3);
 
 /*
 Create an object containing the total salary paid by each department.
 */
-

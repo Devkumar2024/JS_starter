@@ -27,7 +27,7 @@ console.log(obj2)
 
 // Create an object where each city is a key and its value is the number of users living there.
 
-let obj4 = users.reduce((acc, curr, index) => {
+let obj4 = users.reduce((acc, curr) => {
   if (acc[curr.city]) {
     acc[curr.city].push(curr);
   }
@@ -38,8 +38,9 @@ let obj4 = users.reduce((acc, curr, index) => {
 }, {})
 
 console.log(obj4);
+console.log();
 
-let obj5 = users.reduce((acc, curr, index) => {
+let obj5 = users.reduce((acc, curr) => {
   if (curr.age > 23) {
     acc[curr.id] = curr;
   }

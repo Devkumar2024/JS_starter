@@ -10,7 +10,7 @@ const employees = [
 Create an object containing the total salary paid by each department.
 */
 
-let arr4 = employees.reduce((acc, curr, index) => {
+let arr4 = employees.reduce((acc, curr) => {
   if (acc[curr.department]) {
     acc[curr.department] += curr.salary;
   } else {
@@ -39,3 +39,47 @@ for (let dept in temp) {
   arr5[dept] = data.total / data.count;
 }
 console.log(arr5);
+
+
+// Create an object where each department contains the name of its highest-paid employee.
+
+let tempu = employees.reduce((acc, curr) => {
+  if (acc[curr.department]) {
+    acc[curr.department].push([curr.name, curr.salary]);
+  } else {
+    acc[curr.department] = [[curr.name, curr.salary]];
+  }
+  return acc;
+}, {})
+
+console.log(tempu)
+console.log()
+console.log()
+let final = {};
+for (let dept in tempu) {
+  let data = tempu[dept];
+  let maxSalary = 0;
+  let maxName = "";
+  for (let i = 0; i < data.length; i++){
+    if (data[i][1] > maxSalary) {
+      maxSalary = data[i][1];
+      maxName = data[i][0];
+    }
+  }
+  final[dept] = maxName;
+}
+
+console.log(final)
+console.log();
+
+let key = employees.reduce((acc, curr) => {
+  //  += : add in existing value, = assign
+  acc[curr.id] = curr.name
+  return acc 
+
+}, {})
+console.log(key)
+
+
+
+

@@ -18,7 +18,8 @@ const scores = {
 };
 
 let p = (Object.values(scores));
-let arr = Object.keys(scores).reduce((acc, curr_val, index) => {
+let s = Object.keys(scores);
+let arr = s.reduce((acc, curr_val, index) => {
   acc[index] = {name: curr_val, score: p[index]};
   return acc;
 }, []);
