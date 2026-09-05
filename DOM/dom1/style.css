@@ -1,0 +1,15 @@
+h1{
+    background-color: aquamarine;
+    color: purple;
+}
+
+p{
+    background-color: coral;
+    color: purple;
+    width: 150px;
+    height: 150px;
+    border: 3px solid saddlebrown;
+    font-weight: bold;
+    scale: 0.5;
+    transition: all linear 0.5s;
+}
