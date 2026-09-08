@@ -1,23 +1,25 @@
-// inserting elements
+let container = document.querySelector("#container");
+let p = document.createElement("p");
+let p2 = document.createElement("p");
+let h3 = document.createElement("h3");
+let h1 = document.createElement("h1");
+let newDIV = document.createElement("div");
+newDIV.setAttribute("id", "newman");
+newDIV.setAttribute("style", "background-color:pink; border: 5px solid black; padding : 20px;");
 
-let div = document.querySelector('div');
-let alpha = document.querySelector('#alpha');
-let ele = document.createElement('p')
-ele.innerText = "Appended paragraph"
+p.textContent = "Hey I'm red!";
+p2.textContent = "ME TOO!";
+h3.textContent = "I'm a blue h3!";
+h1.textContent = "I'm in div";
+p.setAttribute("style", "color:red;");
+h3.setAttribute("style", "color:blue;");
 
-// div.append(ele)
-// div.prepend(ele)
-// div.before(ele)
+container.appendChild(p);
+container.appendChild(h3);
+container.appendChild(newDIV);
+newDIV.appendChild(h1)
+newDIV.appendChild(p2)
 
-div.after(ele)
-// ele.remove()
-// console.log(alpha);
-alpha.style.backgroundColor = 'blue'
+let content = document.querySelector(".content")
+container.removeChild(content)
 
-let parentNode = alpha.parentNode;
-parentNode.append(ele)  // text, comment, element
-
-let newele = document.createElement('div');
-newele.innerText = 'hello';
-
-parentNode.replaceChild(newele, alpha);
