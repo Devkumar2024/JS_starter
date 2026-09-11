@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>handleEvent method</title>
+  </head>
+  <body>
+    <button id="myBTN">click me</button>
+    <br />
+    <button
+      class="secBTN"
+      ondblclick="console.log(`I have been double clicked`)"
+    >
+      click
+    </button>
+
+    <script>
+      const clickListener = {
+        name: null,
+        handleEvent(event) {
+          this.name = prompt(`Who are you?`);
+          if (!this.name) return;
+          console.log(`Button clicked by ${this.name}`);
+          console.log("Event Type : ", event.type);
+          console.log("target : ", event.target);
+
+          event.target.textContent = `Button clicked by ${this.name}`;
+        },
+      };
+
+      let BTN = document.getElementById("myBTN");
+      let secBTN = document.querySelector(".secBTN");
+
+      BTN.addEventListener("click", clickListener);
+
+      let showConsole = function () {
+        console.log(`Hello`);
+      };
+      secBTN.addEventListener("click", showConsole);
+      secBTN.removeEventListener('click', showConsole);
+
+      // remove eventlistener
+    </script>
+  </body>
+</html>

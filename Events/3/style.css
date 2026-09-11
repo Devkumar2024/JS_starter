@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding: 150px;
+}
+
+.box {
+  background-color: blueviolet;
+  padding: 10px;
+  color: white;
+  font-size: 50px;
+  border-radius: 50%;
+  width: 120px;
+  cursor: pointer;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

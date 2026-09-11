@@ -33,4 +33,8 @@ let substack = document.querySelector('.substack')
 let deepClone = substack.cloneNode(true);
 
 document.body.append(deepClone);
+let h4 = document.querySelector('h4')
+substack.removeChild(h4)
+console.log(substack);
+
 
